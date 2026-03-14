@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nilay Bhattacharya | Web Developer & Cybersecurity Researcher</title>
+  <meta name="description" content="Nilay Bhattacharya - Web Developer & Cybersecurity Learner from India. Building secure digital experiences." />
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="page-transition" id="pageTransition"></div>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <span>↑</span>
+  </button>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__container">
+      <a href="#home" class="brand" aria-label="Home">
+        <img src="assets/images/logo.jpg" alt="Nilay Logo" class="brand__logo" loading="lazy" />
+        <span>Nilay</span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a class="nav__link" href="#home">Home</a>
+        <a class="nav__link" href="#about">About</a>
+        <a class="nav__link" href="#skills">Skills</a>
+        <a class="nav__link" href="#projects">Projects</a>
+        <a class="nav__link" href="#github">GitHub</a>
+        <a class="nav__link" href="#journey">Learning Journey</a>
+        <a class="nav__link" href="#bugbounty">Bug Bounty</a>
+        <a class="nav__link" href="https://github.com/nilaybhat" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="nav__link" href="https://www.linkedin.com/in/nilay-bhattacharya-163b15349" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a class="nav__link" href="#contact">Contact</a>
+      </nav>
+
+      <div class="navbar__actions">
+        <button class="btn btn--icon" id="themeToggle" aria-label="Toggle dark mode">
+          <span class="theme-icon" id="themeIcon">🌙</span>
+        </button>
+        <button class="btn btn--icon nav__toggle" id="navToggle" aria-label="Toggle navigation">
+          <span class="hamburger"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <main>
+    <section class="hero" id="home">
+      <div class="hero__background" id="heroBg"></div>
+      <div class="container hero__container">
+        <div class="hero__content">
+          <p class="hero__subtitle">Hi, I'm</p>
+          <h1 class="hero__title">Nilay <span class="hero__highlight">Bhattacharya</span></h1>
+          <p class="hero__typewriter">
+            <span id="typing"></span><span class="cursor" aria-hidden="true">|</span>
+          </p>
+          <p class="hero__text">
+            Beginner web developer & cybersecurity enthusiast. Building modern, secure experiences one line at a time.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#projects">View Projects</a>
+            <a class="btn btn--secondary" href="https://github.com/nilaybhat" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+            <a class="btn btn--secondary" href="https://www.linkedin.com/in/nilay-bhattacharya-163b15349" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="btn btn--secondary" href="#contact">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="hero__media">
+          <div class="hero__card glass">
+            <img
+              class="hero__photo"
+              src="assets/images/logo.jpg"
+              alt="Profile of Nilay Bhattacharya"
+              loading="lazy"
+            />
+            <div class="hero__badge">
+              <span class="badge">Cybersecurity Learner</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__header">
+          <h2>About Me</h2>
+          <p>
+            Full-stack developer and cybersecurity enthusiast from India. Passionate about building secure web applications and finding vulnerabilities through ethical hacking.
+          </p>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__media animate" data-animate="fade-right">
+            <img src="assets/images/logo.jpg" alt="Nilay Bhattacharya" class="about__image" loading="lazy" />
+          </div>
+
+          <div class="about__content">
+            <article class="card animate" data-animate="fade-up">
+              <h3>📖 My Journey</h3>
+              <p>
+                I started learning web development with HTML and CSS, building my first websites from scratch. Then I explored JavaScript to create interactive experiences. Today, I'm diving deeper into Java and Bash to build backend systems and automation tools. Security has become my passion—I'm learning how applications are hacked to build them securely.
+              </p>
+            </article>
+
+            <article class="card animate" data-animate="fade-up" data-delay="100">
+              <h3>🔐 Bug Bounty & Security</h3>
+              <p>
+                I'm actively learning bug bounty hunting with focus on web vulnerabilities including SQL Injection, XSS, and authentication flaws. My goal is to contribute to responsible disclosure and build a portfolio of security research.
+              </p>
+            </article>
+
+            <article class="card animate" data-animate="fade-up" data-delay="200">
+              <h3>🎯 Future Goal</h3>
+              <p>
+                My mission is to become a professional security researcher earning through bug bounty programs and contributing to a safer digital ecosystem. Location: <strong>India</strong> | Phone: <strong>+91 8327062080</strong>
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section__header">
+          <h2>Skills</h2>
+          <p>Tools and technologies I'm learning and using.</p>
+        </div>
+
+        <div class="skills">
+          <div class="skill-card animate" data-animate="zoom-in">
+            <h3>HTML</h3>
+            <p>Semantic structure, forms, and layout.</p>
+            <div class="progress" aria-label="HTML skill progress">
+              <span class="progress__bar" style="--progress: 90%"></span>
+              <span class="progress__label">90%</span>
+            </div>
+          </div>
+
+          <div class="skill-card animate" data-animate="zoom-in" data-delay="80">
+            <h3>CSS</h3>
+            <p>Flexbox, grid, animations and responsive design.</p>
+            <div class="progress" aria-label="CSS skill progress">
+              <span class="progress__bar" style="--progress: 85%"></span>
+              <span class="progress__label">85%</span>
+            </div>
+          </div>
+
+          <div class="skill-card animate" data-animate="zoom-in" data-delay="160">
+            <h3>JavaScript</h3>
+            <p>DOM, events, and interactive UI logic.</p>
+            <div class="progress" aria-label="JavaScript skill progress">
+              <span class="progress__bar" style="--progress: 75%"></span>
+              <span class="progress__label">75%</span>
+            </div>
+          </div>
+
+          <div class="skill-card animate" data-animate="zoom-in" data-delay="240">
+            <h3>Java</h3>
+            <p>OOP, data structures, and backend logic.</p>
+            <div class="progress" aria-label="Java skill progress">
+              <span class="progress__bar" style="--progress: 60%"></span>
+              <span class="progress__label">60%</span>
+            </div>
+          </div>
+
+          <div class="skill-card animate" data-animate="zoom-in" data-delay="320">
+            <h3>Bash</h3>
+            <p>Scripting, automation, and terminal workflows.</p>
+            <div class="progress" aria-label="Bash skill progress">
+              <span class="progress__bar" style="--progress: 55%"></span>
+              <span class="progress__label">55%</span>
+            </div>
+          </div>
+
+          <div class="skill-card animate" data-animate="zoom-in" data-delay="400">
+            <h3>Cybersecurity</h3>
+            <p>Web vulnerabilities, secure coding, and threat modeling.</p>
+            <div class="progress" aria-label="Cybersecurity skill progress">
+              <span class="progress__bar" style="--progress: 65%"></span>
+              <span class="progress__label">65%</span>
+            </div>
+          </div>
+
+          <div class="skill-card animate" data-animate="zoom-in" data-delay="480">
+            <h3>Bug Bounty</h3>
+            <p>Recon, exploitation, reporting, and responsible disclosure.</p>
+            <div class="progress" aria-label="Bug bounty skill progress">
+              <span class="progress__bar" style="--progress: 70%"></span>
+              <span class="progress__label">70%</span>
+            </div>
+          </div>
+
+          <div class="skill-card animate" data-animate="zoom-in" data-delay="560">
+            <h3>Git</h3>
+            <p>Source control, collaboration, and version history.</p>
+            <div class="progress" aria-label="Git skill progress">
+              <span class="progress__bar" style="--progress: 80%"></span>
+              <span class="progress__label">80%</span>
+            </div>
+          </div>
+
+          <div class="skill-card animate" data-animate="zoom-in" data-delay="640">
+            <h3>SQL</h3>
+            <p>Database design, queries, and data management.</p>
+            <div class="progress" aria-label="SQL skill progress">
+              <span class="progress__bar" style="--progress: 70%"></span>
+              <span class="progress__label">70%</span>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section__header">
+          <h2>Projects</h2>
+          <p>Recent projects and experiments I built while learning.</p>
+        </div>
+
+        <div class="projects">
+          <article class="project-card animate" data-animate="fade-up">
+            <div class="project-card__header">
+              <h3>Student Result Management System</h3>
+              <p class="project-tag">Java</p>
+            </div>
+            <p class="project__desc">
+              A console/desktop application that stores student grades and calculates results with basic reports.
+            </p>
+            <div class="project__footer">
+              <span class="project__tech">Java | OOP | File I/O</span>
+              <a class="btn btn--link" href="#" aria-label="View on GitHub">GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card animate" data-animate="fade-up" data-delay="100">
+            <div class="project-card__header">
+              <h3>Food Website</h3>
+              <p class="project-tag">HTML / CSS</p>
+            </div>
+            <p class="project__desc">
+              A responsive restaurant landing page with menus, contact form, and interactive hover effects.
+            </p>
+            <div class="project__footer">
+              <span class="project__tech">HTML | CSS | Responsive</span>
+              <a class="btn btn--link" href="#" aria-label="View on GitHub">GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card animate" data-animate="fade-up" data-delay="200">
+            <div class="project-card__header">
+              <h3>Library Database System</h3>
+              <p class="project-tag">SQL</p>
+            </div>
+            <p class="project__desc">
+              A SQL schema and query set to manage books, members, and loans with reporting queries.
+            </p>
+            <div class="project__footer">
+              <span class="project__tech">SQL | Database Design</span>
+              <a class="btn btn--link" href="#" aria-label="View on GitHub">GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card animate" data-animate="fade-up" data-delay="300">
+            <div class="project-card__header">
+              <h3>Portfolio Website</h3>
+              <p class="project-tag">HTML / CSS / JS</p>
+            </div>
+            <p class="project__desc">
+              This portfolio itself is a modern single-page site with animations, dark mode, and responsive layout.
+            </p>
+            <div class="project__footer">
+              <span class="project__tech">HTML | CSS | JavaScript</span>
+              <a class="btn btn--link" href="#" aria-label="View on GitHub">GitHub</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GITHUB SECTION -->
+    <section class="section" id="github">
+      <div class="container">
+        <div class="section__header">
+          <h2>GitHub Profile</h2>
+          <p>Check out my repositories and contributions on GitHub.</p>
+        </div>
+
+        <div class="github__grid">
+          <div class="github__card glass animate" data-animate="zoom-in">
+            <h3>🚀 My GitHub</h3>
+            <p>
+              I regularly push my projects to GitHub. Follow my journey as I build web applications, security tools, and educational projects.
+            </p>
+            <a href="https://github.com/nilaybhat" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+              Visit GitHub Profile
+            </a>
+          </div>
+
+          <div class="github__card glass animate" data-animate="zoom-in" data-delay="100">
+            <h3>📊 Repository</h3>
+            <p>
+              Main portfolio repository: <br />
+              <code>nilaybhat/nilaybhat.git</code>
+            </p>
+            <a href="https://github.com/nilaybhat/nilaybhat.git" target="_blank" rel="noopener noreferrer" class="btn btn--secondary">
+              View Repository
+            </a>
+          </div>
+
+          <div class="github__card glass animate" data-animate="zoom-in" data-delay="200">
+            <h3>🔗 GitHub Stats</h3>
+            <img src="https://github-readme-stats.vercel.app/api?username=nilaybhat&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117&border_color=30363d" alt="GitHub Stats" class="github__stats" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="journey">
+      <div class="container">
+        <div class="section__header">
+          <h2>Learning Journey</h2>
+          <p>Steps along the path to becoming a developer and security researcher.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline__item animate" data-animate="fade-right">
+            <span class="timeline__date">Started coding</span>
+            <h3>First steps with HTML</h3>
+            <p>Built simple pages and learned how the web renders content.</p>
+          </div>
+
+          <div class="timeline__item animate" data-animate="fade-left" data-delay="80">
+            <span class="timeline__date">Learning HTML</span>
+            <h3>Deep dive into markup</h3>
+            <p>Focused on semantic structure, forms, and accessibility.</p>
+          </div>
+
+          <div class="timeline__item animate" data-animate="fade-right" data-delay="160">
+            <span class="timeline__date">Learning Java</span>
+            <h3>Object-oriented programming</h3>
+            <p>Started building desktop apps and understanding data structures.</p>
+          </div>
+
+          <div class="timeline__item animate" data-animate="fade-left" data-delay="240">
+            <span class="timeline__date">Learning Bash</span>
+            <h3>Automation & scripting</h3>
+            <p>Wrote scripts to automate tasks and improve workflow.</p>
+          </div>
+
+          <div class="timeline__item animate" data-animate="fade-right" data-delay="320">
+            <span class="timeline__date">Starting bug bounty</span>
+            <h3>Unlocking web vulnerabilities</h3>
+            <p>Practicing reconnaissance and testing for common security issues.</p>
+          </div>
+
+          <div class="timeline__item animate" data-animate="fade-left" data-delay="400">
+            <span class="timeline__date">Future Goal</span>
+            <h3>Professional Security Researcher</h3>
+            <p>Targeting a career in cybersecurity with ethical hacking skillset.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BUG BOUNTY SECTION -->
+    <section class="section" id="bugbounty">
+      <div class="container">
+        <div class="section__header">
+          <h2>Bug Bounty</h2>
+          <p>What I'm learning and practicing in bug bounty hunting.</p>
+        </div>
+
+        <div class="cards cards--bugbounty">
+          <article class="card animate" data-animate="fade-up">
+            <h3>Web Vulnerabilities</h3>
+            <p>Understanding how insecure code leads to bugs like XSS, SQLi, and insecure auth.</p>
+          </article>
+
+          <article class="card animate" data-animate="fade-up" data-delay="100">
+            <h3>Recon</h3>
+            <p>Scanning targets, fingerprinting apps, and gathering data to find attack surfaces.</p>
+          </article>
+
+          <article class="card animate" data-animate="fade-up" data-delay="200">
+            <h3>SQL Injection</h3>
+            <p>Testing input validation and crafting payloads to safely understand injection flaws.</p>
+          </article>
+
+          <article class="card animate" data-animate="fade-up" data-delay="300">
+            <h3>XSS</h3>
+            <p>Experimenting with stored and reflected XSS to learn secure encoding practices.</p>
+          </article>
+
+          <article class="card animate" data-animate="fade-up" data-delay="400">
+            <h3>Authentication Bugs</h3>
+            <p>Exploring session logic, access controls, and common bypass techniques.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section__header">
+          <h2>Get In Touch</h2>
+          <p>Have a project idea, security question, or just want to chat? I'd love to hear from you.</p>
+        </div>
+
+        <div class="contact">
+          <form class="contact__form" id="contactForm" autocomplete="off">
+            <div class="field">
+              <label for="name">Full Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" required />
+            </div>
+
+            <div class="field">
+              <label for="email">Email Address</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="your-email@example.com"
+                required
+              />
+            </div>
+
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or question..." required></textarea>
+            </div>
+
+            <button class="btn btn--primary" type="submit">Send Message</button>
+            <p class="form__feedback" id="formFeedback" aria-live="polite"></p>
+          </form>
+
+          <aside class="contact__info">
+            <div class="contact__card animate" data-animate="fade-left">
+              <h3>💬 Let's Connect</h3>
+              <p>
+                Reach out for collaborations, freelance opportunities, or just to exchange ideas about web development and cybersecurity.
+              </p>
+
+              <div class="contact__details">
+                <div class="detail">
+                  <span class="detail__icon">📞</span>
+                  <div>
+                    <p class="detail__label">Phone</p>
+                    <a href="tel:+918327062080">+91 8327062080</a>
+                  </div>
+                </div>
+
+                <div class="detail">
+                  <span class="detail__icon">🌐</span>
+                  <div>
+                    <p class="detail__label">GitHub</p>
+                    <a href="https://github.com/nilaybhat" target="_blank" rel="noopener noreferrer">github.com/nilaybhat</a>
+                  </div>
+                </div>
+
+                <div class="detail">
+                  <span class="detail__icon">💼</span>
+                  <div>
+                    <p class="detail__label">LinkedIn</p>
+                    <a href="https://www.linkedin.com/in/nilay-bhattacharya-163b15349" target="_blank" rel="noopener noreferrer">Connect with me</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <p>© <span id="year"></span> Nilay Bhattacharya | Cybersecurity Learner</p>
+      <div class="footer__social">
+        <a href="https://github.com/nilaybhat" target="_blank" rel="noopener noreferrer" title="GitHub">🐱 GitHub</a>
+        <a href="https://www.linkedin.com/in/nilay-bhattacharya-163b15349" target="_blank" rel="noopener noreferrer" title="LinkedIn">💼 LinkedIn</a>
+        <a href="tel:+918327062080" title="Phone">📞 +91 8327062080</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
